@@ -2,4 +2,100 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+:root {}
+
+
+/* header  */
+
+.navbar .navbar-brand {
+    color: #1693a5;
+    font-size: 28px;
+}
+
+.navbar .navbar-nav .nav-item {
+    font-size: 17px;
+    margin: 0 10px;
+}
+
+.navbar .nav-btn button {
+    padding: 5px 16px;
+    border: 1px solid #1693a5;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    transition: all 0.8s;
+}
+
+.navbar .nav-btn button:hover {
+    background-color: #1693a5;
+}
+
+header .carousel .carousel-item {
+    max-height: 100vh;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+.slider-one .carousel-caption,
+.slider-two .carousel-caption {
+    text-align: left;
+    top: 30%;
+    bottom: 50%;
+    left: 5%;
+}
+
+.slider-one .carousel-caption button {
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid #1693a5;
+    color: white;
+    font-weight: bold;
+    transition: all 0.8s;
+}
+
+.slider-one .carousel-caption button:hover {
+    background-color: #1693a5;
+
+}
+
+.carousel-caption {
+    z-index: 2;
+}
+
+.slider-two img {
+    filter: brightness(50%);
+}
+
+.slider-two button {
+    padding: 10px 14px;
+    background-color: #1693a5;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #1693a5;
+    transition: all 0.8s;
+}
+
+.slider-two button:hover {
+    background-color: transparent;
+}
+
+.slider-three img {
+    filter: brightness(35%);
+}
+
+.slider-three .carousel-caption {
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
 }

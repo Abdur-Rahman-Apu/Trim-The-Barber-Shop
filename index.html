@@ -7,12 +7,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trim- The barber shop</title>
 
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/3b7a96cd6e.js" crossorigin="anonymous"></script>
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- header  -->
-    <header></header>
+    <header>
+
+        <!-- navbar  -->
+        <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+                    <img src="./assets/Logo/Logo.png" alt=" Logo" height="60" class="d-inline-block align-text-top">
+                    Salon
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#hair-style">Hair Styles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#barbers">Barbers</a>
+                        </li>
+
+                    </ul>
+                    <div class="nav-btn">
+                        <button class="rounded-pill">Login</button>
+                        <button class="rounded-pill">Register</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- carousel  -->
+        <div id="carouselCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item slider-one active">
+                    <img src="./assets/Carousel/banner1.jpg" class="d-block w-100" alt="img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-3">Modern barber shop <br> in center of the city</h1>
+                        <p>A place where you can make you more stylish</p>
+                        <button class="rounded-pill">Explore more</button>
+                    </div>
+
+                    <div class="overlay"></div>
+                </div>
+                <div class="carousel-item slider-two">
+                    <img src="./assets/Carousel/banner2.jpg" class="d-block w-100" alt="img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-3">We Will Make You <br> Stylish</h1>
+                        <p>We provide all types of hair styles according to your wish</p>
+                        <button class="rounded-pill">Explore styles</button>
+                    </div>
+                </div>
+                <div class="carousel-item slider-three">
+                    <img src="./assets/Carousel/banner3.jpg" class="d-block w-100" alt="img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-5">Our Clients Believe Us</h3>
+                            <p>We focus on our clients satisfaction</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
 
     <!-- main  -->
     <main></main>
@@ -22,6 +109,12 @@
     <footer></footer>
 
     <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
