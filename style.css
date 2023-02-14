@@ -1,3 +1,8 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Noto+Serif+Khojki&family=Poppins&family=Roboto&family=Roboto+Condensed:wght@400;700&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +16,11 @@ body {
 
 :root {
     --primary-color: #1693a5;
+    --cookie-font: 'Cookie', cursive;
+    --poppins-font: 'Poppins', sans-serif;
+    --roboto-font: 'Roboto', sans-serif;
+    --roboto-Condensed-font: 'Roboto Condensed', sans-serif;
+    --khojki-font: 'Noto Serif Khojki', serif;
 }
 
 
@@ -31,7 +41,8 @@ body {
 
 .navbar .navbar-brand {
     color: var(--primary-color);
-    font-size: 28px;
+    font-size: 45px;
+    font-family: var(--cookie-font);
 }
 
 .navbar .navbar-toggler .navbar-icon {
@@ -39,11 +50,13 @@ body {
 }
 
 .navbar .navbar-nav .nav-item {
+    font-family: var(--poppins-font);
     font-size: 17px;
     margin: 0 10px;
 }
 
 .navbar .nav-btn button {
+    font-family: var(--poppins-font);
     padding: 5px 16px;
     border: 1px solid var(--primary-color);
     font-weight: bold;
@@ -121,6 +134,7 @@ header .carousel .carousel-item {
     background-color: transparent;
     border: 1px solid var(--primary-color);
     color: white;
+    font-family: var(--roboto-font);
     font-weight: bold;
     transition: all 0.8s;
 }
@@ -135,7 +149,10 @@ header .carousel .carousel-item {
 }
 
 .carousel-caption h1 {
+    font-family: var(--roboto-Condensed-font);
+    font-weight: bold;
     font-size: 50px;
+    letter-spacing: 4px;
 
 }
 
@@ -147,6 +164,7 @@ header .carousel .carousel-item {
     padding: 10px 14px;
     background-color: var(--primary-color);
     color: white;
+    font-family: var(--roboto-font);
     font-weight: bold;
     border: 2px solid var(--primary-color);
     transition: all 0.8s;
@@ -261,6 +279,7 @@ header .carousel .carousel-item {
 
 .hair-style-types .style-info {
     text-align: center;
+    font-family: var(--khojki-font);
 }
 
 .hair-style-types .col {
@@ -275,7 +294,7 @@ header .carousel .carousel-item {
     position: absolute;
     background: var(--primary-color);
     color: black;
-    width: 92%;
+    width: 93.5%;
     bottom: -100px;
     padding: 5px;
     transition: all 0.8s;
@@ -295,6 +314,10 @@ header .carousel .carousel-item {
 
 .hair-style-types .col:hover .style-info {
     bottom: 0;
+}
+
+.hair-style-types .style-info {
+    color: white;
 }
 
 .barbers {
@@ -423,6 +446,10 @@ header .carousel .carousel-item {
 
 }
 
+.contact-info h2 {
+    font-family: var(--roboto-font);
+}
+
 .contact,
 .map {
     flex-basis: 50%;
@@ -434,6 +461,7 @@ header .carousel .carousel-item {
 }
 
 .contact-details h2 {
+    font-family: var(--roboto-Condensed-font);
     color: var(--primary-color);
 }
 
@@ -479,6 +507,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var(--khojki-font);
 }
 
 footer p {
