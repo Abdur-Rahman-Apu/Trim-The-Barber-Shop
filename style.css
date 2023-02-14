@@ -9,17 +9,23 @@ body {
     background-color: #1b1b1b;
 }
 
-.logo {
-    color: #1693a5;
+:root {
+    --primary-color: #1693a5;
 }
 
-:root {}
+
+
 
 
 /* header  */
 
+.logo {
+    color: var(--primary-color);
+}
+
+
 .navbar .navbar-brand {
-    color: #1693a5;
+    color: var(--primary-color);
     font-size: 28px;
 }
 
@@ -30,7 +36,7 @@ body {
 
 .navbar .nav-btn button {
     padding: 5px 16px;
-    border: 1px solid #1693a5;
+    border: 1px solid var(--primary-color);
     font-weight: bold;
     color: white;
     background-color: transparent;
@@ -38,7 +44,7 @@ body {
 }
 
 .navbar .nav-btn button:hover {
-    background-color: #1693a5;
+    background-color: var(--primary-color);
 }
 
 header .carousel .carousel-item {
@@ -65,14 +71,14 @@ header .carousel .carousel-item {
 .slider-one .carousel-caption button {
     padding: 12px;
     background-color: transparent;
-    border: 1px solid #1693a5;
+    border: 1px solid var(--primary-color);
     color: white;
     font-weight: bold;
     transition: all 0.8s;
 }
 
 .slider-one .carousel-caption button:hover {
-    background-color: #1693a5;
+    background-color: var(--primary-color);
 
 }
 
@@ -86,10 +92,10 @@ header .carousel .carousel-item {
 
 .slider-two button {
     padding: 10px 14px;
-    background-color: #1693a5;
+    background-color: var(--primary-color);
     color: white;
     font-weight: bold;
-    border: 2px solid #1693a5;
+    border: 2px solid var(--primary-color);
     transition: all 0.8s;
 }
 
@@ -146,35 +152,43 @@ header .carousel .carousel-item {
 
 .about-info .divider i,
 .hair-style-intro .divider i,
-.barbers-intro .divider i {
+.barbers-intro .divider i,
+.gallery-intro .divider i,
+.contact-info .divider i {
     margin-right: 10px;
-    color: #1693a5;
+    color: var(--primary-color);
 }
 
 .about-info .divider i:nth-child(2n-1),
 .hair-style-intro .divider i:nth-child(2n-1),
-.barbers-intro .divider i:nth-child(2n-1) {
+.barbers-intro .divider i:nth-child(2n-1),
+.gallery-intro .divider i:nth-child(2n-1),
+.contact-info .divider i:nth-child(2n-1) {
     font-size: 8px;
 }
 
 .about-info .divider::before,
 .hair-style-intro .divider::before,
-.barbers-intro .divider::before {
+.barbers-intro .divider::before,
+.gallery-intro .divider::before,
+.contact-info .divider::before {
     content: '';
     width: 80px;
     height: 2px;
-    background-color: #1693a5;
+    background-color: var(--primary-color);
     margin-right: 10px;
 }
 
 
 .about-info .divider::after,
 .hair-style-intro .divider::after,
-.barbers-intro .divider::after {
+.barbers-intro .divider::after,
+.gallery-intro .divider::after,
+.contact-info .divider::after {
     content: '';
     width: 80px;
     height: 2px;
-    background-color: #1693a5;
+    background-color: var(--primary-color);
 }
 
 .hair-style {
@@ -201,7 +215,7 @@ header .carousel .carousel-item {
 
 .hair-style-types .style-info {
     position: absolute;
-    background: #1693a5;
+    background: var(--primary-color);
     color: black;
     width: 92%;
     bottom: -100px;
@@ -217,7 +231,7 @@ header .carousel .carousel-item {
 }
 
 .hair-style-types .col:hover img {
-    border: 5px solid #1693a5;
+    border: 5px solid var(--primary-color);
 
 }
 
@@ -230,7 +244,9 @@ header .carousel .carousel-item {
     height: 600px;
 }
 
-
+.barbers-intro {
+    margin-bottom: 120px;
+}
 
 .barbers-info .col {
     height: 340px;
@@ -238,7 +254,7 @@ header .carousel .carousel-item {
     background-color: black;
     padding: 0;
     border-radius: 8px;
-    box-shadow: 0 0 8px 1px #1693a5;
+    box-shadow: 0 0 8px 1px var(--primary-color);
     position: relative;
 }
 
@@ -256,13 +272,13 @@ header .carousel .carousel-item {
 }
 
 .info .name {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
     color: white;
 }
 
 .info .designation {
-    font-size: 16px;
+    font-size: 12px;
     color: white;
 }
 
@@ -280,9 +296,9 @@ header .carousel .carousel-item {
 }
 
 .info .social-info div {
-    width: 50px;
-    height: 50px;
-    background-color: #ce9c6b;
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -295,12 +311,118 @@ header .carousel .carousel-item {
     transform: rotate(360deg);
 }
 
-.photo {
+.info .social-info div a {
+    color: white;
+
+}
+
+.photo-1 {
+    background-image: url("./assets/Barbers/barber1.jpg");
+}
+
+.photo-2 {
+    background-image: url("./assets/Barbers/barber2.jpg");
+}
+
+.photo-3 {
+    background-image: url("./assets/Barbers/barber3.jpg");
+}
+
+.photo-1,
+.photo-2,
+.photo-3 {
     width: 100%;
     height: 100%;
-    background-image: url("./assets/Barbers/barber1.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     position: absolute;
     top: 0;
+    transition: all 1.2s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.barbers .barbers-info .col:hover .img {
+    transform: scale(0.3) translateY(-560px);
+    border-radius: 50%;
+    border: 8px solid var(--primary-color);
+}
+
+.gallery {
+    margin-top: 40px;
+    background-color: black;
+    padding-top: 70px;
+}
+
+.gallery-intro {
+    margin-bottom: 80px;
+}
+
+.contact-section {
+    padding-top: 80px;
+    padding: 80px 30px;
+    background-color: #161616;
+
+}
+
+.contact,
+.map {
+    flex-basis: 50%;
+}
+
+.contact-details {
+    color: white;
+    margin-top: 50px;
+}
+
+.contact-details h2 {
+    color: var(--primary-color);
+}
+
+.contact-describe span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.shop-social {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.shop-social div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.shop-social a {
+    color: var(--primary-color);
+}
+
+.shop-social div:hover {
+    background-color: var(--primary-color);
+}
+
+.shop-social div:hover a {
+    color: #fff;
+}
+
+/* footer  */
+
+footer {
+    height: 80px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
 }
