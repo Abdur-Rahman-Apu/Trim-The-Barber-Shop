@@ -145,18 +145,21 @@ header .carousel .carousel-item {
 }
 
 .about-info .divider i,
-.hair-style-intro .divider i {
+.hair-style-intro .divider i,
+.barbers-intro .divider i {
     margin-right: 10px;
     color: #1693a5;
 }
 
 .about-info .divider i:nth-child(2n-1),
-.hair-style-intro .divider i:nth-child(2n-1) {
+.hair-style-intro .divider i:nth-child(2n-1),
+.barbers-intro .divider i:nth-child(2n-1) {
     font-size: 8px;
 }
 
 .about-info .divider::before,
-.hair-style-intro .divider::before {
+.hair-style-intro .divider::before,
+.barbers-intro .divider::before {
     content: '';
     width: 80px;
     height: 2px;
@@ -166,7 +169,8 @@ header .carousel .carousel-item {
 
 
 .about-info .divider::after,
-.hair-style-intro .divider::after {
+.hair-style-intro .divider::after,
+.barbers-intro .divider::after {
     content: '';
     width: 80px;
     height: 2px;
@@ -219,4 +223,84 @@ header .carousel .carousel-item {
 
 .hair-style-types .col:hover .style-info {
     bottom: 0;
+}
+
+.barbers {
+    margin-top: 80px;
+    height: 600px;
+}
+
+
+
+.barbers-info .col {
+    height: 340px;
+    width: 340px;
+    background-color: black;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 1px #1693a5;
+    position: relative;
+}
+
+.barbers-info .info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info {
+    text-align: center;
+
+}
+
+.info .name {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.info .designation {
+    font-size: 16px;
+    color: white;
+}
+
+.info .divider {
+    width: 30px;
+    margin: 10px auto;
+    height: 2px;
+    background-color: #ce9c6b;
+}
+
+.info .social-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.info .social-info div {
+    width: 50px;
+    height: 50px;
+    background-color: #ce9c6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    transition: all 0.9s;
+}
+
+.info .social-info div:hover {
+    transform: rotate(360deg);
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/Barbers/barber1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
 }
