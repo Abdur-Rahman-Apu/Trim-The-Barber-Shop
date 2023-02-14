@@ -295,7 +295,7 @@
             </div>
         </section>
 
-        <section class="contact-section d-flex">
+        <section class="contact-section d-flex align-items-center">
             <div class="contact">
                 <div class="contact-info">
                     <h2 class="text-white text-center">Contact Us</h2>
@@ -305,14 +305,15 @@
                         <i class="fa-solid fa-diamond"></i>
                     </div>
                 </div>
-                <div class="contact-details">
+                <div class="contact-details text-center">
+                    <img src="./assets/Logo/Logo.png" class="img-fluid" width="150" alt="img">
                     <h2>Trim - The barber shop</h2>
                     <div>
                         <div class="contact-describe mt-4">
                             <address>691/1,Sobhanbug, Dhaka, 1129</address>
                             <p> <span>Email:</span> trim@barber.com</p>
                             <p> <span>Cell:</span> +8801926534627</p>
-                            <div class="shop-social">
+                            <div class="shop-social mx-auto">
                                 <div><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
                                 <div><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
                                 <div><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></div>
@@ -320,7 +321,7 @@
                         </div>
                         <div class="mt-5">
                             <h2>Working hours</h2>
-                            <p>Everyday 10:00 AMM - 10:00 PM</p>
+                            <p class="">Everyday 10:00 AM - 10:00 PM</p>
                         </div>
                     </div>
                 </div>
@@ -351,7 +352,20 @@
     <!-- owl carousel  -->
     <script src="./Carousel/owl.carousel.min.js"></script>
 
+    <!-- custom js  -->
     <script>
+        const nav = document.querySelector('nav');
+        console.log(nav);
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 50) {
+                nav.classList.add('transparent')
+                nav.classList.remove('bg-transparent')
+            } else {
+                nav.classList.remove('transparent')
+                nav.classList.add('bg-transparent')
+            }
+        })
+
         var owl = $('.owl-carousel');
         owl.owlCarousel({
             items: 4,

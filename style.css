@@ -23,6 +23,11 @@ body {
     color: var(--primary-color);
 }
 
+.transparent {
+    background-color: #1b1b1b;
+}
+
+
 
 .navbar .navbar-brand {
     color: var(--primary-color);
@@ -45,6 +50,47 @@ body {
 
 .navbar .nav-btn button:hover {
     background-color: var(--primary-color);
+}
+
+
+.navbar .nav-item {
+    position: relative;
+
+}
+
+.navbar .nav-link {
+    transition: width 0.3s;
+}
+
+.nav-item .nav-link::before {
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: all 0.9s;
+}
+
+
+
+.nav-item .nav-link::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s;
+}
+
+.nav-item:hover .nav-link::before,
+.nav-item:hover .nav-link::after {
+    width: 100%;
+    opacity: 1;
 }
 
 header .carousel .carousel-item {
