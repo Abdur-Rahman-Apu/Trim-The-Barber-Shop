@@ -34,6 +34,10 @@ body {
     font-size: 28px;
 }
 
+.navbar .navbar-toggler .navbar-icon {
+    color: var(--primary-color);
+}
+
 .navbar .navbar-nav .nav-item {
     font-size: 17px;
     margin: 0 10px;
@@ -130,6 +134,11 @@ header .carousel .carousel-item {
 
 .carousel-caption {
     z-index: 2;
+}
+
+.carousel-caption h1 {
+    font-size: 50px;
+
 }
 
 .slider-two img {
@@ -471,4 +480,27 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* media query */
+
+@media only screen and (max-width: 768px) {
+    header .carousel .carousel-item {
+        min-height: 100vh;
+    }
+
+    .carousel-item img {
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-caption h1 {
+        font-size: 20px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+    }
 }
