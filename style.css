@@ -161,6 +161,7 @@ header .carousel .carousel-item {
 }
 
 .slider-three .carousel-caption {
+    width: 100%;
     left: 50%;
     bottom: 50%;
     transform: translate(-50%, 50%);
@@ -522,11 +523,11 @@ footer p {
     }
 
     .carousel-caption h1 {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .carousel-caption p {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     .slider-one .carousel-caption button {
