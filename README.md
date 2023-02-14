@@ -2,7 +2,7 @@
 
 This website is for a barber shop.
 
-### Live website link: [https://barbery-the-barber-shop.netlify.app/](https://barbery-the-barber-shop.netlify.app/)
+### Live website link: [https://trim-the-barber-shop.netlify.app/](https://trim-the-barber-shop.netlify.app/)
 
 
 
