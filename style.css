@@ -59,7 +59,6 @@ body {
 
 .navbar .nav-item {
     position: relative;
-
 }
 
 .navbar .nav-link {
@@ -74,7 +73,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-
     transition: all 0.9s;
 }
 
@@ -496,11 +494,39 @@ footer p {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .navbar .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar .navbar-brand img {
+        height: 40px;
+    }
+
+    .navbar .nav-item .nav-link {
+        font-size: 12px;
+    }
+
+    .nav-btn button {
+        font-size: 12px;
+    }
+
     .carousel-caption h1 {
         font-size: 20px;
     }
 
     .carousel-caption p {
         font-size: 12px;
+    }
+
+    .slider-one .carousel-caption button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .slider-two button {
+        padding: 5px 9px;
+        font-size: 12px;
+
     }
 }
