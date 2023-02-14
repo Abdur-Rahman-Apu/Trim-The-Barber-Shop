@@ -5,6 +5,13 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #1b1b1b;
+}
+
+.logo {
+    color: #1693a5;
+}
 
 :root {}
 
@@ -98,4 +105,67 @@ header .carousel .carousel-item {
     left: 50%;
     bottom: 50%;
     transform: translate(-50%, 50%);
+}
+
+
+/* main part  */
+
+/* about us  */
+
+.about {
+    background-color: #1b1b1b;
+    color: white;
+    height: 500px;
+}
+
+.about>div {
+    flex-basis: 50%;
+}
+
+.about-figure img:first-child {
+    width: 450px;
+    height: 500px;
+}
+
+.about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 10px solid white;
+}
+
+.about-figure img:nth-child(2) {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    border: 10px solid white;
+}
+
+.about-info .divider i {
+    margin-right: 10px;
+    color: #1693a5;
+}
+
+.about-info .divider i:nth-child(2n-1) {
+    font-size: 8px;
+}
+
+.about-info .divider::before {
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: #1693a5;
+    margin-right: 10px;
+}
+
+
+.about-info .divider::after {
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: #1693a5;
+    margin-left: 10px;
 }

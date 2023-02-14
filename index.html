@@ -10,12 +10,14 @@
     <!-- font awesome link  -->
     <script src="https://kit.fontawesome.com/3b7a96cd6e.js" crossorigin="anonymous"></script>
 
-    <!-- custom css  -->
-    <link rel="stylesheet" href="style.css">
+
 
     <!-- bootstrap css  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -27,7 +29,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
                     <img src="./assets/Logo/Logo.png" alt=" Logo" height="60" class="d-inline-block align-text-top">
-                    Salon
+                    Trim
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +63,7 @@
         </nav>
 
         <!-- carousel  -->
-        <div id="carouselCaptions" class="carousel slide">
+        <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -102,7 +104,45 @@
     </header>
 
     <!-- main  -->
-    <main></main>
+    <main>
+
+        <!-- about section  -->
+
+        <section id="about" class="about mt-5 d-flex p-5">
+            <div class="about-figure position-relative">
+
+                <img class="img-fluid" src="./assets/About/about1.jpg" alt="img">
+
+
+                <img class="img-fluid" src="./assets/About/about2.jpg" alt="img">
+
+            </div>
+            <div class="d-flex flex-column justify-content-center mt-5 p-3">
+                <div class="about-info">
+                    <h2 class="text-center">About Us</h2>
+                    <div class="d-flex justify-content-center align-items-center mt-4 divider">
+                        <i class="fa-solid fa-diamond"></i>
+                        <i class="fa-solid fa-diamond"></i>
+                        <i class="fa-solid fa-diamond"></i>
+                    </div>
+                </div>
+                <div class="about-description mt-5">
+                    <h3 class="text-center mb-4">Welcome to <span class="logo">Trim</span> - A Hair Salon</h3>
+
+                    <p class="text-justify">A barbershop is a place where people go to cut their hair and of course it
+                        is the working place
+                        of a barber. We provide various hair styles which will make your look more stylish than before.
+                        We can style your hair as your instructions. Our customers are very satisfied because of our
+                        finishing. Please visit our shop and try our service.</p>
+
+                    <div class="d-flex justify-content-between align-items-center w-75 mt-5">
+                        <h3>Opening hours</h3>
+                        <p class="m-0">10:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <!-- footer  -->
