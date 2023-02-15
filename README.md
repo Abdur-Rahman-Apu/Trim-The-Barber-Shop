@@ -1,6 +1,6 @@
 # Trim - The barber shop
 
-This website is for a barber shop.
+This is a landing page which is for a barber shop.
 
 ### Live website link: [https://trim-the-barber-shop.netlify.app/](https://trim-the-barber-shop.netlify.app/)
 
