@@ -520,6 +520,10 @@ footer p {
     .barbers .barbers-info .col {
         margin-top: 80px;
     }
+
+    .shop-social {
+        width: 50%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -567,6 +571,9 @@ footer p {
     .slider-two button {
         padding: 5px 9px;
         font-size: 12px;
+    }
 
+    .shop-social {
+        width: 75%;
     }
 }
